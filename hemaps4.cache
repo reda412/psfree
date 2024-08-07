@@ -1,0 +1,24 @@
+CACHE MANIFEST 
+# ZinzanaStore PS4 Host
+
+alert.mjs
+cache.html
+chain.mjs
+config.mjs
+constants.mjs
+exploit.mjs
+goldhen.bin
+hemaps4.jpg
+index.html
+int64.js
+int64.mjs
+kexploit.js
+mem.mjs
+memtools.mjs
+offset.mjs
+rop.js
+rw.mjs
+utils.mjs
+
+NETWORK: 
+* 

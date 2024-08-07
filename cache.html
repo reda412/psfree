@@ -1,0 +1,90 @@
+<html manifest="hemaps4.cache">
+    
+<head>
+    <title>ZinzanaStore PS4 PSFREE Host Auto For FW900</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body 
+        {
+            background-image: url("hemaps4.jpg");
+            height: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .loader 
+        {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -75px 0 0 -75px;
+            border: 10px solid #1f1e1e;
+            border-radius: 50%;
+            border-top: 10px solid #FF0000;
+            border-left: 10px solid #FF0000;
+            width: 120px;
+            height: 120px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin 
+        {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .info 
+        {
+            overflow: hidden;
+            position: fixed;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+
+            font-size: 45px;
+            font-family: sans-serif;
+            color: #b8b8b8;
+
+            transform: translate(-50%, -50%);
+        }
+
+        .j {
+            font-size: 15px;
+            color:#2F3335;
+        }
+#allset {
+ font-weight:bold;
+ text-shadow: 4px 4px 4px black;
+
+ font-size:17px;
+}
+    </style>
+     
+     <script>
+	    history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+        window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="بدأ الحفظ";};
+        window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
+        window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="تم الحفظ بنجاح";setTimeout(function(){document.getElementById("progress").innerHTML="خلاص كده فل";allset(); }, 1500);};
+
+        function allset() 
+        {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("allset").style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+	<h1 id=msgs style='font-size:50px;text-align:center;color:white'>ZinzanaStore PS4</h1>
+    <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px rgb(0, 0, 0);color:rgb(255, 255, 255);'></h1><br>
+    <div id="loader" class="loader"></div>
+    <div id="allset" class="info" style="display:none;font-size:50px;text-align:center;color:rgb(255, 255, 255);">كده تمام إقفل النت وإفتح المتصفح تاني</div>
+</body>
+
+</html>
